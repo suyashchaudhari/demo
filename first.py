@@ -2,7 +2,7 @@ print("hello")
 from numpy import *
 
 
-
+#to print top ten numbers
 class topten:
     def __int__(self):
         self.num = 0
@@ -21,7 +21,7 @@ values.__next__()
 for i in values:
     print(i)
 
-
+#square function using yield 
 def ten():
     n = 1
     while n<=10:
@@ -29,6 +29,9 @@ def ten():
         yield sq
         n += 1
 values=ten()
+
+
+#execution using try 
 for i in values:
     print(i)
 a=int(input("enter a 1st number"))
@@ -42,7 +45,7 @@ finally:
     print("bye")
 
 
-
+#sorting program
 def sort(nums):
     for i in range(len(nums)-1,0,-1):
         for j in range(i):
@@ -56,6 +59,8 @@ nums = [5, 3, 6, 8, 2, 9]
 x= sort(nums)
 print(x)
 
+
+#linear sorting
 def sort1(num):
     for i in range(num):
         minpos = 1
@@ -69,7 +74,7 @@ num=[5,2,4,23,7,2]
 sort(num)
 print(num)
 
-
+#numpy 
 x = array([
             [5,25,8],
             [14,45,85]
